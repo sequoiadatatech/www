@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,15 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- i18next -->
+    <script src="js/i18next.min.js" ></script>
+    <script src="js/jquery-i18next.min.js" ></script>
 </head>
 <body id="page-top" class="index">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
@@ -35,19 +44,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#whatwedo">What We Do</a>
+                        <a href="#whatwedo" data-i18n="nav.whatwedo">What We Do</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#services">Services</a>
+                        <a href="#services" data-i18n="nav.services">Services</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#industryexperience">Industry Experience</a>
+                        <a href="#industryexperience" data-i18n="nav.industryexperience">Industry Experience</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#customers">Customers</a>
+                        <a href="#customers" data-i18n="nav.customers">Customers</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" data-i18n="nav.contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -60,9 +69,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text">
-                        <span class="name">Enable data driven strategy and decisions</span>
+                        <span class="name" data-i18n="header.intro">Enable data driven strategy and decisions</span>
                         <hr class="star-light">
-                        <span class="skills">AI - Predictive Modeling - NLP - Big Data</span>
+                        <span class="skills" data-i18n="header.skills">AI - Predictive Modeling - NLP - Big Data</span>
                     </div>
                 </div>
             </div>
@@ -74,13 +83,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>What We Do</h2>
+                    <h2 data-i18n="whatwedo.header">What We Do</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p>Our mission is to increase society's data literacy and help organizations make better data-driven decisions. Leveraging many years of business consulting experience, we bring cutting edge industry tools and expertise to traditional business, small business and public sectors.</p>
+                    <p data-i18n="whatwedo.mission">Our mission is to increase society's data literacy and help organizations make better data-driven decisions. Leveraging many years of business consulting experience, we bring cutting edge industry tools and expertise to traditional business, small business and public sectors.</p>
                 </div>
             </div>
         </div>
@@ -91,47 +100,47 @@
         <div class="container">
              <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Services</h2>
+                    <h2 data-i18n="services.header">Services</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                  <h3>Data strategy planning &amp; training- A quick start and continuous improvement</h3>
+                  <h3 data-i18n="services.quickstart">Data strategy planning &amp; training- A quick start and continuous improvement</h3>
                     <ul>
-                      <li>Strategy &amp; implementation plan</li>
-                      <li>Data infrastructure</li>
-                      <li>Analytics framework</li>
-                      <li>Predictive analytics training</li>
-                      <li>AWS and Hadoop training</li>
-                      <li>Natural language processing training</li>
-                      <li>Image and video processing training</li>
+                      <li data-i18n="services.qsone">Strategy &amp; implementation plan</li>
+                      <li data-i18n="services.qstwo">Data infrastructure</li>
+                      <li data-i18n="services.qsthree">Analytics framework</li>
+                      <li data-i18n="services.qsfour">Predictive analytics training</li>
+                      <li data-i18n="services.qsfive">AWS and Hadoop training</li>
+                      <li data-i18n="services.qssix">Natural language processing training</li>
+                      <li data-i18n="services.qsseven">Image and video processing training</li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                  <h3>Analytics projects - solve real problems</h3>
+                  <h3 data-i18n="services.analytics">Analytics projects - solve real problems</h3>
                     <ul>
-                      <li>Automated BI/Data discovery</li>
-                      <li>Segmentation and Patterns Detection</li>
-                      <li>Predictive modeling and machine learning to solve specific business problems</li>
-                      <li>IT and engineering integration</li>
-                      <li>Natural language processing</li>
-                      <li>Image processing</li>
+                      <li data-i18n="services.asone">Automated BI/Data discovery</li>
+                      <li data-i18n="services.astwo">Segmentation and Patterns Detection</li>
+                      <li data-i18n="services.asthree">Predictive modeling and machine learning to solve specific business problems</li>
+                      <li data-i18n="services.asfour">IT and engineering integration</li>
+                      <li data-i18n="services.asfive">Natural language processing</li>
+                      <li data-i18n="services.assix">Image processing</li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                  <h3>Big data and cloud computing service - it's time to scale</h3>
+                  <h3 data-i18n="services.bigdata">Big data and cloud computing service - it's time to scale</h3>
                     <ul>
-                      <li>AWS know how, setup and optimization</li>
-                      <li>Hadoop setup and optimization</li>
-                      <li>Connecting analytics software with big data infrastructure, including Python and R</li>
-                      <li>Spark kickstart</li>
-                      <li>Workflow automation</li>
-                      <li>Backend API and integration</li>
+                      <li data-i18n="services.bdone">AWS know how, setup and optimization</li>
+                      <li data-i18n="services.bdtwo">Hadoop setup and optimization</li>
+                      <li data-i18n="services.bdthree">Connecting analytics software with big data infrastructure, including Python and R</li>
+                      <li data-i18n="services.bdfour">Spark kickstart</li>
+                      <li data-i18n="services.bdfive">Workflow automation</li>
+                      <li data-i18n="services.bdsix">Backend API and integration</li>
                     </ul>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#contact" class="btn btn-lg btn-outline">
+                    <a href="#contact" class="btn btn-lg btn-outline" data-i18n="services.getintouch">
                         <i class=""></i> Get in touch
                     </a>
                 </div>
@@ -144,40 +153,40 @@
         <div class="container">
              <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Industry Experience</h2>
+                    <h2 data-i18n="industryexperience.header">Industry Experience</h2>
                     <hr class="star-primary">
-                    <div class="col-lg-10 col-lg-offset-1"> See our experience in selected industries and our interests relevant to the public sector. We have also carried out many projects in telecommunication, biotechnology, agriculture and university research areas.</div>
+                    <div class="col-lg-10 col-lg-offset-1" data-i18n="industryexperience.summary"> See our experience in selected industries and our interests relevant to the public sector. We have also carried out many projects in telecommunication, biotechnology, agriculture and university research areas.</div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                  <h3><span class="feature-item fa fa-fw fa-credit-card"></span> Banking &amp; Insurance</h3>
+                  <h3><span class="feature-item fa fa-fw fa-credit-card"></span> <span data-i18n="industryexperience.banking">Banking &amp; Insurance</span></h3>
                     <ul>
-                      <li>Predictive models for digital marketing</li>
-                      <li>Propensity models for cross sell and up sell models</li>
-                      <li>Pricing &amp; Risk models</li>
-                      <li>Claim analysis</li>
-                      <li>Fraud detection</li>
-                      <li>NLP with internal notes and external data source</li>
-                      <li>Social media analysis</li>
-                      <li>Image and video processing</li>
+                      <li data-i18n="industryexperience.bone">Predictive models for digital marketing</li>
+                      <li data-i18n="industryexperience.btwo">Propensity models for cross sell and up sell models</li>
+                      <li data-i18n="industryexperience.bthree">Pricing &amp; Risk models</li>
+                      <li data-i18n="industryexperience.bfour">Claim analysis</li>
+                      <li data-i18n="industryexperience.bfive">Fraud detection</li>
+                      <li data-i18n="industryexperience.bsix">NLP with internal notes and external data source</li>
+                      <li data-i18n="industryexperience.bseven">Social media analysis</li>
+                      <li data-i18n="industryexperience.beight">Image and video processing</li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                  <h3><span class="feature-item fa fa-fw fa-ship"></span> Shipping &amp; Logistics</h3>
+                  <h3><span class="feature-item fa fa-fw fa-ship"></span> <span data-i18n="industryexperience.shipping">Shipping &amp; Logistics</span></h3>
                     <ul>
-                      <li>Macro economic trend analysis for supply and demand</li>
-                      <li>Pricing models</li>
-                      <li>Route optimization</li>
-                      <li>Location Android App and location analysis</li>
-                      <li>Visualization dashboard</li>
-                      <li>NLP and image processing</li>
-                      <li>Ad hoc analysis</li>
+                      <li data-i18n="industryexperience.sone">Macro economic trend analysis for supply and demand</li>
+                      <li data-i18n="industryexperience.stwo">Pricing models</li>
+                      <li data-i18n="industryexperience.sthree">Route optimization</li>
+                      <li data-i18n="industryexperience.sfour">Location Android App and location analysis</li>
+                      <li data-i18n="industryexperience.sfive">Visualization dashboard</li>
+                      <li data-i18n="industryexperience.ssix">NLP and image processing</li>
+                      <li data-i18n="industryexperience.sseven">Ad hoc analysis</li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                  <h3><span class="feature-item fa fa-fw fa-bank"></span> Public Sector</h3>
-                    <div>We are a group of people passionate about sustainability, green energy, public education and diversity within our field of expertise. Please contact us to see how we can help with your data analytics and technology needs.</div>
+                  <h3><span class="feature-item fa fa-fw fa-bank"></span> <span data-i18n="industryexperience.public">Public Sector</span></h3>
+                    <div data-i18n="industryexperience.pone">We are a group of people passionate about sustainability, green energy, public education and diversity within our field of expertise. Please contact us to see how we can help with your data analytics and technology needs.</div>
                 </div>
             </div>
         </div>
@@ -189,7 +198,7 @@
             <div class="row">
 
                 <div class="text-center">
-                    <h2>Customers</h2>
+                    <h2 data-i18n="customers.header">Customers</h2>
                     <hr class="star-light">
 
                     <div id="customer-carousel" class="carousel slide col-lg-offset-2" data-ride="carousel" data-interval="15000">
@@ -204,10 +213,10 @@
                             <img class="img-responsive img-thumbnail customer-image" src="img/trawind.png">
                             <ul class="list-unstyled">
                               <li><b>Tiejiang Shen</b></li>
-                              <li>VP of Technology at Trawind</li>
+                              <li data-i18n="customers.twtitle">VP of Technology at Trawind</li>
                             </ul>
                           </div>
-                          <div class="col-lg-6">
+                          <div class="col-lg-6" data-i18n="customers.twdesc">
                             <p>Trawind is the third largest privately owned shipping and logistic company in China, operating in both domestic and international markets.  Our services include logistics, trucking and oceanic shipping, broker and agency services, and vessel management.</p> <p>With Sequoia’s help, we are enhancing our digital and data strategy so as to maintain our competitive advantage. Sequoia provided strategic insights to our senior management team, initiated the dialogue between our sales and operation teams to bridge business and technology. Sequoia continuous to provide project consulting service, using cutting edge data tech and analytics. Our goal is to have the best data driven business platform in the industry, A goal we will reach with Sequoia’s help.</p>
                           </div>
                         </div>
@@ -216,12 +225,12 @@
                           <div class="col-lg-3">
                             <img class="img-responsive img-thumbnail customer-image" src="img/blurr.png">
                             <ul class="list-unstyled">
-                              <li><b>Blurr Team</b></li>
+                              <li><b data-i18n="customers.bttitle">Blurr Team</b></li>
                             </ul>
                           </div>
                           <div class="col-lg-6">
-                            <p>Blurr is revolutionizing the way we share memories with its geo-location photo-sharing mobile application. Launched in Boston, the company is growing fast and just recently relocated to LA.</p>
-                            <p>We are tapping into the millennial generation and collecting powerful data from our users. Sequoia is helping us make informed decisions about what data to collect, how to structure the data collection, and how to best utilize that data. With thousands of pictures and metadata associated with those pictures, Sequoia is continuously helping us to identify trends in the data and paving the way for smart, data-driven business decisions.</p>
+                            <p data-i18n="customers.btdescp1">Blurr is revolutionizing the way we share memories with its geo-location photo-sharing mobile application. Launched in Boston, the company is growing fast and just recently relocated to LA.</p>
+                            <p data-i18n="customers.btdescp2">We are tapping into the millennial generation and collecting powerful data from our users. Sequoia is helping us make informed decisions about what data to collect, how to structure the data collection, and how to best utilize that data. With thousands of pictures and metadata associated with those pictures, Sequoia is continuously helping us to identify trends in the data and paving the way for smart, data-driven business decisions.</p>
                           </div>
                         </div>
 
@@ -236,7 +245,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact</h2>
+                    <h2 data-i18n="contact.header">Contact</h2>
                     <hr class="star-primary">
                     <div class="row">
                         <ul class="list-unstyled">
@@ -276,12 +285,6 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
@@ -296,6 +299,114 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-90961241-1', 'auto');
       ga('send', 'pageview');
+    </script>
+
+    <!-- Localization -->
+    <script>
+      var setlang = window.navigator.userLanguage || window.navigator.language || 'en';
+      var language = setlang.includes('zh') ? 'zh' : 'en';
+
+      i18next.init({
+        lng: language,
+        resources: {
+          zh: {
+            translation: {
+              nav: {
+                whatwedo: '我们致力于',
+                services: '服务内容',
+                industryexperience: '行业经验',
+                customers: '客户推荐',
+                contact: '联系方式'
+              },
+              header: {
+                intro: '启动数据，果断决策!',
+                skills: '人工智能－预判模型－机器学习－大数据'
+              },
+              whatwedo: {
+                header: '我们致力于',
+                mission: '提高社会整体数据素养，帮助各类传统企业，中小型企业以及公共部门做出更好的数据驱动决策。我们的团队扎根于多年世界顶级数据科学以及商业咨询的经验，为您带来尖端信息和数据行业知识和工具。'
+              },
+              services: {
+                header: '服务内容',
+
+                quickstart: '数据应用及平台整体规划 -把握良好开端',
+                qsone: '数据应用及平台整体规划 -把握良好开端',
+                qstwo: '数据后端平台架构',
+                qsthree: '数据分析应用框架',
+                qsfour: '数据分析培训',
+                qsfive: '云计算平台培训',
+                qssix: '自然语言分析培训',
+                qsseven: '图像视频处理培训',
+
+                analytics: '数据分析项目 - 解决实际问题',
+                asone: '商业分析及图像显现',
+                astwo: '市场客户细分',
+                asthree: '数据趋势走向分析',
+                asfour: '预判建模和机器学习',
+                asfive: '自然语言处理',
+                assix: '图像视频处理项目',
+
+                bigdata: '大数据及云计算服务－水平更上层楼',
+                bdone: '大数据平台设计和优化',
+                bdtwo: '云计算咨询服务',
+                bdthree: '设计实施数据流水线',
+                bdfour: '工作流程自动化',
+                bdfive: '数据分析建模软件集成',
+                bdsix: '建立后端API端口',
+
+                getintouch: '联系我们'
+              },
+              industryexperience: {
+                header: '行业经验',
+                summary: '参见特定行业经验及我们的公益兴趣。 我们还在电信，生物技术，农业和大学研究领域开展了其他项目。',
+                banking: '金融保险业',
+
+                bone: '数字营销预测模型',
+                btwo: '追加销售及交叉销售模型',
+                bthree: '定价和风险模型',
+                bfour: '索赔分析',
+                bfive: '欺诈检测',
+                bsix: '自然语言处理建模',
+                bseven: '社交媒体分析',
+                beight: '图像和视频处理',
+
+                shipping: '航运物流业',
+
+                sone: '供需宏观趋势分析',
+                stwo: '定价模型',
+                sthree: '航线路线优化',
+                sfour: 'APP定位及分析',
+                sfive: '可视化仪表',
+                ssix: '自然语言处理建模',
+                sseven: '图像和视频处理',
+
+                public: '公益兴趣',
+                pone: '我们热心于环境保护，可持续发展，绿色能源以及公共教育领域。如有需求敬请联系。运用数据科学打造美好未来！'
+              },
+              customers: {
+                header: '客户推荐',
+                twtitle: '信息技术部总经理',
+                twdesc: '信风集团是中国第三大私营船运和物流公司兼顾国内和国际市场。 我们的服务包括物流，货运代理，租船以及船舶管理。 巨杉鼎力协助我们加强我们的数字化管理确保行业竞争优势以更好的为我们客户服务。 巨杉团队为我们的管理团队提供数据化战略策划，启动我们营销和技术团队间对话。 巨杉提供尖端数据技术并结合我们对行业的深刻把握，共同打造业内最好的数据驱动业务平台。',
+                bttitle: 'Blurr科技',
+                btdescp1: 'Blurr运用高科技移动，成像以及定位技术，正在快速改变我们共享记忆的方式。我们公司在美国波士顿建立，现迁址阳光灿烂的洛杉矶，开始高速增长期。',
+                btdescp2: '我们的产品为千禧世代量身定制，并从用户那里收集大量数据。 Sequoia帮助我们制定数据架构，决定收集哪些数据，确定如何更好的运用数据。 使用图像及视频识别，与元数据相关联，Sequoia不断帮助我们把握数据趋势，并为智能数据驱动的产品及业务决策铺平道路。'
+              },
+              contact: {
+                header: '联系方式'
+              }
+            }
+          }
+        }
+      }, function(err, t) {
+        jqueryI18next.init(i18next, $);
+        $('.nav').localize();
+        $('.intro-text').localize();
+        $('#whatwedo').localize();
+        $('#services').localize();
+        $('#industryexperience').localize();
+        $('#customers').localize();
+        $('#contact').localize();
+      });
     </script>
 </body>
 </html>
